@@ -55,8 +55,8 @@ window.PAPER_FEATURES = [
       "The estimated share of Black authors on the author team. For each author, we infer their most likely country of birth based on their last name. Using the racial composition of that country, we estimate the probability that the author is Black. The final score is the average of these estimated “Black probability” values across all co-authors.",
   },
   {
-    id: "hispanic_and_other",
-    name: "hispanic_and_other",
+    id: "hispanic",
+    name: "hispanic",
     type: "Continuous",
     typeDetail: "Continuous in range (0, 1)",
     description:
@@ -76,7 +76,7 @@ window.PAPER_FEATURES = [
     type: "Continuous",
     typeDetail: "Continuous",
     description:
-      "The average racial diversity within the co-author team, measured by Shannon entropy. For each author, we first infer their most likely country of birth based on their last name. Based on the country’s known racial composition, we assign each author a 4-dimensional race-composition probability vector over the four racial categories (Asian, Black, Hispanic_and_other, White). To compute the diversity score, we first average these probability vectors across all authors to obtain a team-level racial distribution. We then apply Shannon entropy to this averaged distribution. Higher values indicate a more balanced mix of racial groups within the author team; lower values suggest dominance by a single racial group.",
+      "The average racial diversity within the co-author team, measured by Shannon entropy. For each author, we first infer their most likely country of birth based on their last name. Based on the country’s known racial composition, we assign each author a 4-dimensional race-composition probability vector over the four racial categories (Asian, Black, Hispanic, White). To compute the diversity score, we first average these probability vectors across all authors to obtain a team-level racial distribution. We then apply Shannon entropy to this averaged distribution. Higher values indicate a more balanced mix of racial groups within the author team; lower values suggest dominance by a single racial group.",
   },
   {
     id: "country_race_diversity_score",
@@ -84,7 +84,7 @@ window.PAPER_FEATURES = [
     type: "Continuous",
     typeDetail: "Continuous",
     description:
-      "The average racial diversity of the authors’ countries of birth, measured by Shannon entropy. For each author, we first infer their most likely country of birth based on their last name. Based on the country’s known racial composition, we assign each author a 4-dimensional race-composition probability vector over the four racial categories (Asian, Black, Hispanic_and_other, White). To compute the diversity score, we first calculate Shannon entropy for each author’s probability vector. We then average these entropy values across all authors. Higher values indicate that, on average, the authors come from countries with racially balanced populations; lower values mean that the authors tend to come from countries dominated by a single racial group.",
+      "The average racial diversity of the authors’ countries of birth, measured by Shannon entropy. For each author, we first infer their most likely country of birth based on their last name. Based on the country’s known racial composition, we assign each author a 4-dimensional race-composition probability vector over the four racial categories (Asian, Black, Hispanic, White). To compute the diversity score, we first calculate Shannon entropy for each author’s probability vector. We then average these entropy values across all authors. Higher values indicate that, on average, the authors come from countries with racially balanced populations; lower values mean that the authors tend to come from countries dominated by a single racial group.",
   },
   {
     id: "news_inequality_mentions_3_years",
