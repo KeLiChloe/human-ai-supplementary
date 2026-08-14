@@ -80,6 +80,12 @@ body::before {
   z-index: 20;
 }
 
+.brand {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 .brand-mark {
   margin: 0;
   font-size: 1.28rem;
@@ -87,6 +93,11 @@ body::before {
   letter-spacing: -0.03em;
   line-height: 1.15;
   max-width: 14rem;
+  transition: color 160ms ease;
+}
+
+.brand:hover .brand-mark {
+  color: var(--teal);
 }
 
 .brand-sub {
@@ -217,6 +228,96 @@ body.section-network-active .main {
 .page-hero {
   margin-bottom: 2.5rem;
   animation: rise 700ms ease both;
+}
+
+.section-home {
+  min-height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.75rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.home-hero {
+  animation: rise 700ms ease both;
+}
+
+.home-brand {
+  margin: 0 0 0.85rem;
+  font-size: clamp(2rem, 4.8vw, 3.35rem);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+  max-width: 14ch;
+}
+
+.home-hero h1 {
+  margin: 0;
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink-soft);
+}
+
+.home-lede {
+  margin: 0.85rem 0 0;
+  max-width: 28rem;
+  color: var(--muted);
+  font-family: var(--font-serif);
+  font-size: 1.08rem;
+  line-height: 1.55;
+}
+
+.home-entries {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--line);
+  animation: rise 850ms ease both;
+  animation-delay: 80ms;
+}
+
+.home-entry {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.15rem 0.1rem;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  color: inherit;
+  transition: background 160ms ease, padding-left 160ms ease;
+}
+
+.home-entry:hover {
+  background: rgba(31, 111, 120, 0.06);
+  padding-left: 0.45rem;
+}
+
+.home-entry-index {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.home-entry-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.home-entry-arrow {
+  color: var(--teal);
+  font-size: 1.1rem;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.home-entry:hover .home-entry-arrow {
+  opacity: 1;
+  transform: none;
 }
 
 .eyebrow {
