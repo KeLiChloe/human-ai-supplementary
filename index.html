@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css?v=20260815a" />
+    <link rel="stylesheet" href="css/styles.css?v=20260815b" />
   </head>
   <body>
     <div class="app">
@@ -29,16 +29,20 @@
             <span class="nav-index">00</span>
             Home
           </a>
-          <a class="nav-link" href="#dictionaries" data-section="dictionaries">
+          <a class="nav-link" href="#guidelines" data-section="guidelines">
             <span class="nav-index">01</span>
+            <span class="nav-label">Theory rating guidelines</span>
+          </a>
+          <a class="nav-link" href="#dictionaries" data-section="dictionaries">
+            <span class="nav-index">02</span>
             <span class="nav-label">Dictionaries of keywords used for labeling</span>
           </a>
           <a class="nav-link" href="#features" data-section="features">
-            <span class="nav-index">02</span>
+            <span class="nav-index">03</span>
             Features
           </a>
           <a class="nav-link" href="#network" data-section="network">
-            <span class="nav-index">03</span>
+            <span class="nav-index">04</span>
             <span class="nav-label">Semantic network</span>
           </a>
         </nav>
@@ -55,9 +59,91 @@
             <h1 id="home-title">Supplementary Materials</h1>
             <p class="home-lede">
               This page hosts open supplementary materials for the paper,
-              including keyword dictionaries, analysis features, and an
-              interactive semantic network.
+              including theory rating guidelines, keyword dictionaries,
+              analysis features, and an interactive semantic network.
             </p>
+          </div>
+        </section>
+
+        <section
+          id="guidelines"
+          class="section section-guidelines"
+          aria-labelledby="guidelines-title"
+          hidden
+        >
+          <header class="page-hero">
+            <p class="eyebrow">Paper archive</p>
+            <h1>Supplementary Materials</h1>
+          </header>
+          <div class="section-head">
+            <div>
+              <h2 id="guidelines-title">Theory rating guidelines</h2>
+            </div>
+          </div>
+
+          <div class="guide-tabs" role="tablist" aria-label="Evaluator type">
+            <button type="button" class="guide-tab is-active" data-guide="human" role="tab" aria-selected="true">
+              Human evaluators
+            </button>
+            <button type="button" class="guide-tab" data-guide="llm" role="tab" aria-selected="false">
+              LLM evaluator
+            </button>
+          </div>
+
+          <div id="guide-human" class="guide-panel">
+            <h3 class="guide-subtitle">Rubric</h3>
+            <ol class="rubric-list">
+              <li>
+                <strong>Clarity and Coherence:</strong>
+                Is the explanation clearly written, well-structured, and logically
+                consistent, without ambiguity or internal contradictions?
+              </li>
+              <li>
+                <strong>Causal Reasoning:</strong>
+                Does the explanation articulate plausible causal mechanisms linking
+                the predictors to the outcome?
+              </li>
+              <li>
+                <strong>Theoretical Depth:</strong>
+                Does the explanation go beyond surface-level statements and engage
+                with meaningful underlying concepts or mechanisms?
+              </li>
+              <li>
+                <strong>Creativity:</strong>
+                Does the explanation demonstrate creative or original thinking, such
+                as offering novel perspectives, non-obvious connections, or insightful
+                interpretations?
+              </li>
+              <li>
+                <strong>Persuasiveness:</strong>
+                Does the explanation provide a convincing theoretical account of why
+                the predictors should be related to the outcome?
+              </li>
+            </ol>
+
+            <h3 class="guide-subtitle">Scoring guidelines</h3>
+            <ul class="score-scale">
+              <li><span>1–2</span> poor</li>
+              <li><span>3–4</span> weak</li>
+              <li><span>5–6</span> moderate</li>
+              <li><span>7–8</span> strong</li>
+              <li><span>9–10</span> excellent</li>
+            </ul>
+          </div>
+
+          <div id="guide-llm" class="guide-panel" hidden>
+            <p class="guide-note">
+              The LLM evaluator received a system prompt (adapted to task domain and
+              effect type) and a user prompt with anonymized theory texts in shuffled
+              batches.
+            </p>
+
+            <h3 class="guide-subtitle">System prompt</h3>
+            <div class="prompt-picker" id="prompt-picker"></div>
+            <pre class="prompt-block" id="system-prompt-block"></pre>
+
+            <h3 class="guide-subtitle">User prompt template</h3>
+            <pre class="prompt-block" id="user-prompt-block"></pre>
           </div>
         </section>
 
@@ -151,8 +237,9 @@
       Menu
     </button>
 
-    <script src="js/features.js?v=20260815a"></script>
-    <script src="js/dictionaries.js?v=20260815a"></script>
-    <script src="js/main.js?v=20260815a"></script>
+    <script src="js/features.js?v=20260815b"></script>
+    <script src="js/dictionaries.js?v=20260815b"></script>
+    <script src="js/llm-prompts.js?v=20260815b"></script>
+    <script src="js/main.js?v=20260815b"></script>
   </body>
 </html>
