@@ -29,6 +29,10 @@
             <span class="nav-index">01</span>
             Features
           </a>
+          <a class="nav-link" href="#dictionaries" data-section="dictionaries">
+            <span class="nav-index">02</span>
+            <span class="nav-label">Dictionaries of keywords used for labeling</span>
+          </a>
         </nav>
 
         <div class="sidebar-foot">
@@ -71,6 +75,39 @@
           <div id="feature-list" class="feature-list"></div>
           <p id="feature-empty" class="empty-state" hidden>No features match this filter.</p>
         </section>
+
+        <section
+          id="dictionaries"
+          class="section section-dictionaries"
+          aria-labelledby="dictionaries-title"
+          hidden
+        >
+          <div class="section-head">
+            <div>
+              <h2 id="dictionaries-title">
+                Dictionaries of keywords used for labeling
+              </h2>
+              <p class="section-desc">
+                Keyword lists used to label gender- and race-related content.
+              </p>
+            </div>
+          </div>
+
+          <div class="dict-toolbar">
+            <label class="search">
+              <span class="sr-only">Filter keywords</span>
+              <input
+                id="dict-filter"
+                type="search"
+                placeholder="Search keywords…"
+                autocomplete="off"
+              />
+            </label>
+          </div>
+
+          <div id="dict-list" class="dict-list"></div>
+          <p id="dict-empty" class="empty-state" hidden>No keywords match this filter.</p>
+        </section>
       </main>
     </div>
 
@@ -79,6 +116,7 @@
     </button>
 
     <script src="js/features.js"></script>
+    <script src="js/dictionaries.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
