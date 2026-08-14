@@ -16,4 +16,3 @@ Then open http://localhost:8080
 ## Contents
 
 - **Features** — definitions of the 13 covariates used in analysis
-- More sections (figures, data & code) coming soon
