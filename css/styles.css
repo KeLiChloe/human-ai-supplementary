@@ -82,10 +82,11 @@ body::before {
 
 .brand-mark {
   margin: 0;
-  font-size: 1.55rem;
+  font-size: 1.28rem;
   font-weight: 700;
   letter-spacing: -0.03em;
-  line-height: 1.1;
+  line-height: 1.15;
+  max-width: 14rem;
 }
 
 .brand-sub {

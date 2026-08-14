@@ -1,4 +1,4 @@
-# Human–AI Supplementary Materials
+# Human–AI Theory Building · Supplementary Materials
 
 Open companion site for paper supplementary materials.
 
