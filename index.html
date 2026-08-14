@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Human–AI · Supplementary Materials</title>
+    <meta
+      name="description"
+      content="Open supplementary materials for the Human–AI collaboration research paper."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar" aria-label="Site navigation">
+        <div class="brand">
+          <p class="brand-mark">Human–AI</p>
+          <p class="brand-sub">Supplementary Materials</p>
+        </div>
+
+        <nav class="nav">
+          <a class="nav-link is-active" href="#features" data-section="features">
+            <span class="nav-index">01</span>
+            Features
+          </a>
+          <a class="nav-link is-soon" href="#coming-soon" aria-disabled="true">
+            <span class="nav-index">02</span>
+            Figures
+            <span class="soon">soon</span>
+          </a>
+          <a class="nav-link is-soon" href="#coming-soon" aria-disabled="true">
+            <span class="nav-index">03</span>
+            Data &amp; Code
+            <span class="soon">soon</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-foot">
+          <a
+            class="pdf-link"
+            href="assets/list-of-features.pdf"
+            download
+          >
+            Download features PDF
+          </a>
+          <p class="credit">Ke Li · open research archive</p>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="page-hero">
+          <p class="eyebrow">Paper archive</p>
+          <h1>Supplementary Materials</h1>
+          <p class="lede">
+            Companion resources for the Human–AI collaboration study—variable
+            definitions, figures, and open materials as they are released.
+          </p>
+        </header>
+
+        <section id="features" class="section" aria-labelledby="features-title">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Feature catalog</p>
+              <h2 id="features-title">Features used in analysis</h2>
+              <p class="section-desc">
+                Thirteen covariates used in the paper’s analyses, with data type
+                and definition for each.
+              </p>
+            </div>
+            <div class="section-meta">
+              <span class="chip">13 features</span>
+              <a class="text-link" href="assets/list-of-features.pdf" download
+                >PDF</a
+              >
+            </div>
+          </div>
+
+          <div class="feature-toolbar">
+            <label class="search">
+              <span class="sr-only">Filter features</span>
+              <input
+                id="feature-filter"
+                type="search"
+                placeholder="Filter by name or keyword…"
+                autocomplete="off"
+              />
+            </label>
+            <div class="type-filters" id="type-filters" role="group" aria-label="Filter by type">
+              <button type="button" class="type-btn is-active" data-type="all">All</button>
+              <button type="button" class="type-btn" data-type="Binary">Binary</button>
+              <button type="button" class="type-btn" data-type="Integer">Integer</button>
+              <button type="button" class="type-btn" data-type="Continuous">Continuous</button>
+            </div>
+          </div>
+
+          <div id="feature-list" class="feature-list"></div>
+          <p id="feature-empty" class="empty-state" hidden>No features match this filter.</p>
+        </section>
+
+        <section id="coming-soon" class="section section-muted" hidden>
+          <h2>More materials soon</h2>
+          <p>Figures and data releases will appear here.</p>
+        </section>
+      </main>
+    </div>
+
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open navigation">
+      Menu
+    </button>
+
+    <script src="js/features.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
