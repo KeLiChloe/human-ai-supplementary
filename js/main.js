@@ -5,8 +5,9 @@
   const dictListEl = document.getElementById("dict-list");
   const toggle = document.getElementById("nav-toggle");
   const sections = {
-    features: document.getElementById("features"),
     dictionaries: document.getElementById("dictionaries"),
+    features: document.getElementById("features"),
+    network: document.getElementById("network"),
   };
 
   let query = "";
@@ -79,11 +80,12 @@
     document.querySelectorAll(".nav-link").forEach((link) => {
       link.classList.toggle("is-active", link.dataset.section === id);
     });
+    document.body.classList.toggle("section-network-active", id === "network");
   }
 
   function applyHash() {
-    const hash = (location.hash || "#features").replace("#", "");
-    showSection(sections[hash] ? hash : "features");
+    const hash = (location.hash || "#dictionaries").replace("#", "");
+    showSection(sections[hash] ? hash : "dictionaries");
   }
 
   filterInput.addEventListener("input", (e) => {
