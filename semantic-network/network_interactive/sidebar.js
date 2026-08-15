@@ -222,7 +222,6 @@
     brand.innerHTML =
       '<a class="supp-back" href="' + suppHref + '">← Supplementary Materials</a>' +
       '<a href="' + homeHref + '">' +
-      '<div class="eyebrow">Theory explanation space</div>' +
       "<h1>Semantic Networks</h1></a>";
     root.appendChild(brand);
 
