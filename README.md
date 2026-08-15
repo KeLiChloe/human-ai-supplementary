@@ -15,4 +15,8 @@ Then open http://localhost:8080
 
 ## Contents
 
-- **Features** — definitions of the 13 covariates used in analysis
+- [Home](https://kelichloe.github.io/human-ai-supplementary/)
+- [Theory rating guidelines](https://kelichloe.github.io/human-ai-supplementary/guidelines.html)
+- [Keyword dictionaries](https://kelichloe.github.io/human-ai-supplementary/dictionaries.html)
+- [Features](https://kelichloe.github.io/human-ai-supplementary/features.html)
+- [Semantic network](https://kelichloe.github.io/human-ai-supplementary/network.html)
