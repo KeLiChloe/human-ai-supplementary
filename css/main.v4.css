@@ -844,7 +844,7 @@ body.section-network-active .main {
 
 .survey-flow-figure {
   background: #fff;
-  max-width: 560px;
+  max-width: min(100%, 720px);
 }
 
 .survey-flow-figure img {
