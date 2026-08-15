@@ -19,4 +19,4 @@ Then open http://localhost:8080
 - [Theory rating guidelines](https://kelichloe.github.io/human-ai-supplementary/guidelines.html)
 - [Keyword dictionaries](https://kelichloe.github.io/human-ai-supplementary/dictionaries.html)
 - [Features](https://kelichloe.github.io/human-ai-supplementary/features.html)
-- [Semantic network](https://kelichloe.github.io/human-ai-supplementary/network.html)
+- [Semantic network](https://kelichloe.github.io/human-ai-supplementary/semantic-network/)

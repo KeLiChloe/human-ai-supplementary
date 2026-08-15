@@ -33,7 +33,7 @@
     },
     {
       page: "network",
-      href: "network.html",
+      href: "semantic-network/index.html",
       index: "06",
       label: "Semantic network",
     },
