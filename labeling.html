@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Features · Human–AI Theory Building</title>
+    <title>LLM paper labeling · Human–AI Theory Building</title>
     <meta
       name="description"
       content="Open supplementary materials for the Human–AI Theory Building research paper."
@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="css/styles.css?v=20260815g" />
   </head>
-  <body data-page="features">
+  <body data-page="labeling">
     <div class="app">
       <aside class="sidebar" aria-label="Site navigation">
         <a class="brand" href="index.html">
@@ -36,11 +36,11 @@
             <span class="nav-index">02</span>
             <span class="nav-label">Dictionaries of keywords used for labeling</span>
           </a>
-          <a class="nav-link" href="labeling.html" data-page="labeling">
+          <a class="nav-link is-active" href="labeling.html" data-page="labeling">
             <span class="nav-index">03</span>
             <span class="nav-label">LLM prompts for paper labeling</span>
           </a>
-          <a class="nav-link is-active" href="features.html" data-page="features">
+          <a class="nav-link" href="features.html" data-page="features">
             <span class="nav-index">04</span>
             Features
           </a>
@@ -56,34 +56,31 @@
       </aside>
 
       <main class="main">
-        <section class="section" aria-labelledby="features-title">
+        <section class="section section-guidelines" aria-labelledby="labeling-title">
           <header class="page-hero">
             <p class="eyebrow">Paper archive</p>
             <h1>Supplementary Materials</h1>
           </header>
           <div class="section-head">
             <div>
-              <h2 id="features-title">Features used in analysis</h2>
-            </div>
-            <div class="section-meta">
-              <span class="chip">13 features</span>
+              <h2 id="labeling-title">LLM prompts for paper labeling</h2>
             </div>
           </div>
 
-          <div class="feature-toolbar">
-            <label class="search">
-              <span class="sr-only">Filter features</span>
-              <input
-                id="feature-filter"
-                type="search"
-                placeholder="Filter by name or keyword…"
-                autocomplete="off"
-              />
-            </label>
-          </div>
+          <p class="guide-note">
+            In addition to keyword dictionaries, papers were labeled with an LLM
+            (DeepSeek) from title and abstract. The model returned a binary label:
+            <code>1</code> if the paper discusses social inequality,
+            <code>0</code> otherwise. This step was used for ambiguous dictionary
+            matches (papers with a small but non-zero count of inequality-related
+            keywords).
+          </p>
 
-          <div id="feature-list" class="feature-list"></div>
-          <p id="feature-empty" class="empty-state" hidden>No features match this filter.</p>
+          <h3 class="guide-subtitle">System prompt</h3>
+          <pre class="prompt-block" id="labeling-system-prompt"></pre>
+
+          <h3 class="guide-subtitle">User prompt template</h3>
+          <pre class="prompt-block" id="labeling-user-prompt"></pre>
         </section>
       </main>
     </div>
@@ -93,7 +90,7 @@
     </button>
 
     <script src="js/site.js?v=20260815g"></script>
-    <script src="js/features.js?v=20260815g"></script>
-    <script src="js/page-features.js?v=20260815g"></script>
+    <script src="js/labeling-prompts.js?v=20260815g"></script>
+    <script src="js/page-labeling.js?v=20260815g"></script>
   </body>
 </html>
