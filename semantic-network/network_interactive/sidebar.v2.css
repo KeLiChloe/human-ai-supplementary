@@ -29,13 +29,15 @@
 
 .sidebar-brand .supp-back {
   display: inline-block;
-  margin-bottom: 0.65rem;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: #1f6f78;
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #0f172a;
   text-decoration: none;
 }
 .sidebar-brand .supp-back:hover {
+  color: #1f6f78;
   text-decoration: underline;
 }
 
