@@ -782,3 +782,31 @@ body.section-network-active .main {
   height: auto;
   image-rendering: -webkit-optimize-contrast;
 }
+
+.model-families {
+  display: grid;
+  gap: 1.35rem;
+  margin-top: 0.35rem;
+}
+
+.model-family .guide-subtitle {
+  margin-bottom: 0.55rem;
+}
+
+.model-list {
+  margin: 0;
+  padding-left: 1.35rem;
+  color: var(--ink-soft);
+  font-family: var(--font-serif);
+  line-height: 1.7;
+}
+
+.model-list li + li {
+  margin-top: 0.2rem;
+}
+
+.model-list code {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--ink);
+}
