@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Human–AI Theory Building · Supplementary Materials</title>
+    <title>Features · Human–AI Theory Building</title>
     <meta
       name="description"
       content="Open supplementary materials for the Human–AI Theory Building research paper."
@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="css/styles.css?v=20260815d" />
   </head>
-  <body data-page="home" class="section-home-active">
+  <body data-page="features">
     <div class="app">
       <aside class="sidebar" aria-label="Site navigation">
         <a class="brand" href="index.html">
@@ -25,7 +25,7 @@
         </a>
 
         <nav class="nav">
-          <a class="nav-link is-active" href="index.html" data-page="home">
+          <a class="nav-link" href="index.html" data-page="home">
             <span class="nav-index">00</span>
             Home
           </a>
@@ -37,7 +37,7 @@
             <span class="nav-index">02</span>
             <span class="nav-label">Dictionaries of keywords used for labeling</span>
           </a>
-          <a class="nav-link" href="features.html" data-page="features">
+          <a class="nav-link is-active" href="features.html" data-page="features">
             <span class="nav-index">03</span>
             Features
           </a>
@@ -53,16 +53,34 @@
       </aside>
 
       <main class="main">
-        <section class="section section-home" aria-labelledby="home-title">
-          <div class="home-hero">
-            <p class="home-brand">Human–AI Theory Building</p>
-            <h1 id="home-title">Supplementary Materials</h1>
-            <p class="home-lede">
-              This page hosts open supplementary materials for the paper,
-              including theory rating guidelines, keyword dictionaries,
-              analysis features, and an interactive semantic network.
-            </p>
+        <section class="section" aria-labelledby="features-title">
+          <header class="page-hero">
+            <p class="eyebrow">Paper archive</p>
+            <h1>Supplementary Materials</h1>
+          </header>
+          <div class="section-head">
+            <div>
+              <h2 id="features-title">Features used in analysis</h2>
+            </div>
+            <div class="section-meta">
+              <span class="chip">13 features</span>
+            </div>
           </div>
+
+          <div class="feature-toolbar">
+            <label class="search">
+              <span class="sr-only">Filter features</span>
+              <input
+                id="feature-filter"
+                type="search"
+                placeholder="Filter by name or keyword…"
+                autocomplete="off"
+              />
+            </label>
+          </div>
+
+          <div id="feature-list" class="feature-list"></div>
+          <p id="feature-empty" class="empty-state" hidden>No features match this filter.</p>
         </section>
       </main>
     </div>
@@ -72,5 +90,7 @@
     </button>
 
     <script src="js/site.js?v=20260815d"></script>
+    <script src="js/features.js?v=20260815d"></script>
+    <script src="js/page-features.js?v=20260815d"></script>
   </body>
 </html>
