@@ -810,3 +810,8 @@ body.section-network-active .main {
   font-size: 0.9rem;
   color: var(--ink);
 }
+
+.model-note {
+  margin: 0.65rem 0 0;
+  font-size: 0.95rem;
+}
