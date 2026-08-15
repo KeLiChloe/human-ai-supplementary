@@ -61,7 +61,7 @@
       const active = item.page === page ? " is-active" : "";
       const labelHtml = item.index
         ? `<span class="nav-index">${escapeHtml(item.index)}</span><span class="nav-label">${escapeHtml(item.label)}</span>`
-        : escapeHtml(item.label);
+        : `<span class="nav-label">${escapeHtml(item.label)}</span>`;
       return `<a class="nav-link${active}" href="${escapeHtml(item.href)}" data-page="${escapeHtml(item.page)}">${labelHtml}</a>`;
     }).join("");
   }
