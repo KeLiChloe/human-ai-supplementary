@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script>
       (function () {
-        var SITE_V = "v5";
+        var SITE_V = "v6";
         try {
           if (localStorage.getItem("hai-supp-v") !== SITE_V) {
             localStorage.setItem("hai-supp-v", SITE_V);
@@ -48,28 +48,32 @@
             <span class="nav-index">01</span>
             <span class="nav-label">GenAI models (n = 25)</span>
           </a>
-          <a class="nav-link" href="dictionaries.html" data-page="dictionaries">
+          <a class="nav-link" href="survey.html" data-page="survey">
             <span class="nav-index">02</span>
+            <span class="nav-label">Survey</span>
+          </a>
+          <a class="nav-link" href="dictionaries.html" data-page="dictionaries">
+            <span class="nav-index">03</span>
             <span class="nav-label">Dictionaries of keywords used for labeling</span>
           </a>
           <a class="nav-link" href="llm_paper_labeling.html" data-page="llm_paper_labeling">
-            <span class="nav-index">03</span>
+            <span class="nav-index">04</span>
             <span class="nav-label">LLM prompts for paper labeling</span>
           </a>
           <a class="nav-link" href="features.html" data-page="features">
-            <span class="nav-index">04</span>
+            <span class="nav-index">05</span>
             Features
           </a>
           <a class="nav-link" href="llm_diagram_analysis.html" data-page="llm_diagram_analysis">
-            <span class="nav-index">05</span>
+            <span class="nav-index">06</span>
             <span class="nav-label">LLM prompt for analyzing the diagrams</span>
           </a>
           <a class="nav-link" href="semantic-network/index.html" data-page="network">
-            <span class="nav-index">06</span>
+            <span class="nav-index">07</span>
             <span class="nav-label">Semantic network</span>
           </a>
           <a class="nav-link" href="guidelines.html" data-page="guidelines">
-            <span class="nav-index">07</span>
+            <span class="nav-index">08</span>
             <span class="nav-label">Theory rating guidelines</span>
           </a>
         </nav>
@@ -86,9 +90,10 @@
             <h1 id="home-title">Supplementary Materials</h1>
             <p class="home-lede">
               This page hosts open supplementary materials for the paper,
-              including the GenAI model roster, keyword dictionaries,
-              LLM labeling prompts, analysis features, diagram-analysis prompts,
-              an interactive semantic network, and theory rating guidelines.
+              including the GenAI model roster, survey instrument and flow,
+              keyword dictionaries, LLM labeling prompts, analysis features,
+              diagram-analysis prompts, an interactive semantic network, and
+              theory rating guidelines.
             </p>
           </div>
         </section>
@@ -99,6 +104,6 @@
       Menu
     </button>
 
-    <script src="js/nav.v5.js"></script>
+    <script src="js/nav.v6.js"></script>
   </body>
 </html>

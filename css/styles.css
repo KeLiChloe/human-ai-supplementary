@@ -841,3 +841,16 @@ body.section-network-active .main {
   margin: 0.65rem 0 0;
   font-size: 0.95rem;
 }
+
+.survey-flow-figure {
+  background: #000;
+  max-width: 520px;
+}
+
+.survey-flow-figure img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
