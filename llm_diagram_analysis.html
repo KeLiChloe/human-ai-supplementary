@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css?v=20260815h" />
+    <link rel="stylesheet" href="css/styles.css?v=20260815i" />
   </head>
   <body data-page="llm_diagram_analysis">
     <div class="app">
@@ -75,11 +75,11 @@
             effect signs). An LLM coded each response into three structure
             metrics: number of paths, maximum path length, and number of latent
             variables. Empty, missing, or ill-defined diagrams were coded as
-            <code>-1</code>. Race and Gender prompts differ only in outcome wording.
+            <code>-1</code>. Outcome wording uses
+            <code>{task: gender or race}</code>.
           </p>
 
           <h3 class="guide-subtitle">System prompt</h3>
-          <div class="prompt-picker" id="diagram-prompt-picker"></div>
           <pre class="prompt-block" id="diagram-system-prompt"></pre>
 
           <h3 class="guide-subtitle">User prompt template</h3>
@@ -92,8 +92,8 @@
       Menu
     </button>
 
-    <script src="js/site.js?v=20260815h"></script>
-    <script src="js/diagram-prompts.js?v=20260815h"></script>
-    <script src="js/page-diagram.js?v=20260815h"></script>
+    <script src="js/site.js?v=20260815i"></script>
+    <script src="js/diagram-prompts.js?v=20260815i"></script>
+    <script src="js/page-diagram.js?v=20260815i"></script>
   </body>
 </html>
