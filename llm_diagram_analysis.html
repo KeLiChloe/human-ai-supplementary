@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>LLM paper labeling · Human–AI Theory Building</title>
+    <title>LLM diagram analysis · Human–AI Theory Building</title>
     <meta
       name="description"
       content="Open supplementary materials for the Human–AI Theory Building research paper."
@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="css/styles.css?v=20260815h" />
   </head>
-  <body data-page="llm_paper_labeling">
+  <body data-page="llm_diagram_analysis">
     <div class="app">
       <aside class="sidebar" aria-label="Site navigation">
         <a class="brand" href="index.html">
@@ -35,11 +35,11 @@
             <span class="nav-index">02</span>
             <span class="nav-label">Dictionaries of keywords used for labeling</span>
           </a>
-          <a class="nav-link is-active" href="llm_paper_labeling.html" data-page="llm_paper_labeling">
+          <a class="nav-link" href="llm_paper_labeling.html" data-page="llm_paper_labeling">
             <span class="nav-index">03</span>
             <span class="nav-label">LLM prompts for paper labeling</span>
           </a>
-          <a class="nav-link" href="llm_diagram_analysis.html" data-page="llm_diagram_analysis">
+          <a class="nav-link is-active" href="llm_diagram_analysis.html" data-page="llm_diagram_analysis">
             <span class="nav-index">04</span>
             <span class="nav-label">LLM prompt for analyzing the diagrams</span>
           </a>
@@ -59,31 +59,31 @@
       </aside>
 
       <main class="main">
-        <section class="section section-guidelines" aria-labelledby="labeling-title">
+        <section class="section section-guidelines" aria-labelledby="diagram-title">
           <header class="page-hero">
             <p class="eyebrow">Paper archive</p>
             <h1>Supplementary Materials</h1>
           </header>
           <div class="section-head">
             <div>
-              <h2 id="labeling-title">LLM prompts for paper labeling</h2>
+              <h2 id="diagram-title">LLM prompt for analyzing the diagrams</h2>
             </div>
           </div>
 
           <p class="guide-note">
-            In addition to keyword dictionaries, papers were labeled with an LLM
-            (DeepSeek) from title and abstract. The model returned a binary label:
-            <code>1</code> if the paper discusses social inequality,
-            <code>0</code> otherwise. This step was used for ambiguous dictionary
-            matches (papers with a small but non-zero count of inequality-related
-            keywords).
+            Survey respondents wrote causal diagrams in text form (arrows and
+            effect signs). An LLM coded each response into three structure
+            metrics: number of paths, maximum path length, and number of latent
+            variables. Empty, missing, or ill-defined diagrams were coded as
+            <code>-1</code>. Race and Gender prompts differ only in outcome wording.
           </p>
 
           <h3 class="guide-subtitle">System prompt</h3>
-          <pre class="prompt-block" id="labeling-system-prompt"></pre>
+          <div class="prompt-picker" id="diagram-prompt-picker"></div>
+          <pre class="prompt-block" id="diagram-system-prompt"></pre>
 
           <h3 class="guide-subtitle">User prompt template</h3>
-          <pre class="prompt-block" id="labeling-user-prompt"></pre>
+          <pre class="prompt-block" id="diagram-user-prompt"></pre>
         </section>
       </main>
     </div>
@@ -93,7 +93,7 @@
     </button>
 
     <script src="js/site.js?v=20260815h"></script>
-    <script src="js/labeling-prompts.js?v=20260815h"></script>
-    <script src="js/page-labeling.js?v=20260815h"></script>
+    <script src="js/diagram-prompts.js?v=20260815h"></script>
+    <script src="js/page-diagram.js?v=20260815h"></script>
   </body>
 </html>
