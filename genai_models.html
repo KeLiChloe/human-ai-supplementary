@@ -3,8 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
+    <script>
+      (function () {
+        var SITE_V = "v4";
+        try {
+          if (localStorage.getItem("hai-supp-v") !== SITE_V) {
+            localStorage.setItem("hai-supp-v", SITE_V);
+            if ("caches" in window) {
+              caches.keys().then(function (keys) {
+                keys.forEach(function (k) { caches.delete(k); });
+              });
+            }
+            location.replace(location.pathname + location.search + location.hash);
+          }
+        } catch (e) {}
+      })();
+    </script>
     <meta http-equiv="Expires" content="0" />
     <title>GenAI models · Human–AI Theory Building</title>
     <meta
@@ -17,7 +31,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css?v=unify3" />
+    <link rel="stylesheet" href="css/main.v4.css" />
   </head>
   <body data-page="genai_models">
     <div class="app">
@@ -152,6 +166,6 @@
       Menu
     </button>
 
-    <script src="js/site-v2.js?v=2"></script>
+    <script src="js/nav.v4.js"></script>
   </body>
 </html>
