@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      (function () {
+        var SITE_V = "v7";
+        try {
+          if (localStorage.getItem("hai-supp-v") !== SITE_V) {
+            localStorage.setItem("hai-supp-v", SITE_V);
+            if ("caches" in window) {
+              caches.keys().then(function (keys) {
+                keys.forEach(function (k) { caches.delete(k); });
+              });
+            }
+            location.replace(location.pathname + location.search + location.hash);
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <meta http-equiv="Expires" content="0" />
+    <title>Human sample demographics · Human–AI Theory Building</title>
+    <meta
+      name="description"
+      content="Demographics of human participants (PhD students and senior scientists) in the Human–AI Theory Building study."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.v4.css" />
+  </head>
+  <body data-page="human_sample">
+    <div class="app">
+      <aside class="sidebar" aria-label="Site navigation">
+        <a class="brand" href="index.html">
+          <p class="brand-mark">Human–AI Theory Building</p>
+          <p class="brand-sub">Supplementary Materials</p>
+        </a>
+        <nav class="nav" id="site-nav" aria-label="Supplementary sections"></nav>
+        <div class="sidebar-foot">
+          <p class="credit">Ke Li · open research archive</p>
+        </div>
+      </aside>
+
+      <main class="main">
+        <section class="section" aria-labelledby="human-sample-title">
+          <header class="page-hero">
+            <h1>Supplementary Materials</h1>
+          </header>
+          <div class="section-head">
+            <div>
+              <h2 id="human-sample-title">Human sample demographics (n = 73)</h2>
+            </div>
+          </div>
+
+          <p class="guide-note">
+            Human contributors comprise 60 PhD students and 13 senior scientists
+            (total n = 73). Demographics below are reported separately for each group.
+            Institutions are listed as provided by participants. Discipline uses the study’s
+            coded academic-field category (with free-text department as fallback if coding is absent).
+          </p>
+
+          <section class="demog-group" aria-labelledby="demog-0">
+            <h3 class="guide-subtitle" id="demog-0">PhD students (n = 60)</h3>
+            <div class="demog-grid">
+              <div class="demog-block">
+                <h4 class="demog-h">Gender</h4>
+                <table class="demog-table"><thead><tr><th>Gender</th><th class="num">n</th><th class="num">%</th></tr></thead><tbody><tr><td>Male</td><td class="num">40</td><td class="num">66.7%</td></tr><tr><td>Female</td><td class="num">18</td><td class="num">30.0%</td></tr><tr><td>Non-binary</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>Prefer not to disclose</td><td class="num">1</td><td class="num">1.7%</td></tr></tbody></table>
+              </div>
+              <div class="demog-block">
+                <h4 class="demog-h">Country of residence</h4>
+                <table class="demog-table"><thead><tr><th>Country</th><th class="num">n</th><th class="num">%</th></tr></thead><tbody><tr><td>United States</td><td class="num">45</td><td class="num">75.0%</td></tr><tr><td>France</td><td class="num">5</td><td class="num">8.3%</td></tr><tr><td>Singapore</td><td class="num">5</td><td class="num">8.3%</td></tr><tr><td>United Kingdom</td><td class="num">3</td><td class="num">5.0%</td></tr><tr><td>Canada</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>Switzerland</td><td class="num">1</td><td class="num">1.7%</td></tr></tbody></table>
+              </div>
+              <div class="demog-block">
+                <h4 class="demog-h">Discipline</h4>
+                <table class="demog-table"><thead><tr><th>Discipline</th><th class="num">n</th><th class="num">%</th></tr></thead><tbody><tr><td>Operations &amp; Quantitative Methods</td><td class="num">24</td><td class="num">40.0%</td></tr><tr><td>Computing &amp; Engineering</td><td class="num">16</td><td class="num">26.7%</td></tr><tr><td>Management &amp; Strategy</td><td class="num">9</td><td class="num">15.0%</td></tr><tr><td>Behavioral &amp; Social Sciences</td><td class="num">6</td><td class="num">10.0%</td></tr><tr><td>Marketing &amp; Economics</td><td class="num">5</td><td class="num">8.3%</td></tr></tbody></table>
+              </div>
+              <div class="demog-block demog-block-wide">
+                <h4 class="demog-h">Institution</h4>
+                <table class="demog-table"><thead><tr><th>Institution</th><th class="num">n</th><th class="num">%</th></tr></thead><tbody><tr><td>INSEAD</td><td class="num">11</td><td class="num">18.3%</td></tr><tr><td>Massachusetts Institute of Technology</td><td class="num">7</td><td class="num">11.7%</td></tr><tr><td>New York University</td><td class="num">4</td><td class="num">6.7%</td></tr><tr><td>University of Pennsylvania</td><td class="num">3</td><td class="num">5.0%</td></tr><tr><td>Columbia Business School</td><td class="num">2</td><td class="num">3.3%</td></tr><tr><td>Cornell University</td><td class="num">2</td><td class="num">3.3%</td></tr><tr><td>Johns Hopkins University</td><td class="num">2</td><td class="num">3.3%</td></tr><tr><td>Stanford University</td><td class="num">2</td><td class="num">3.3%</td></tr><tr><td>University of Cambridge</td><td class="num">2</td><td class="num">3.3%</td></tr><tr><td>(not reported)</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>Center for Computational Science and Engineering, Massachusetts Institute of Technology</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>Cornell University SC Johnson College of Business</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>Cornell University, Ithaca, New York, USA</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>Cornell University, School of Operations Research and Information Engineering</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>Cornell University/Cornell Tech</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>Department of Statistics and Data Science, The Wharton School</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>Department of Statistics and Data Science, The Wharton School, University of Pennsylvania</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>ETH Zurich</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>Haas School of Business, University of California Berkeley</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>Indiana University</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>London Business School</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>MIT</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>MIT EECS</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>Northwestern University Feinberg School of Medicine</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>Northwestern University, Evanston, IL 60208, USA</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>Operations, Information and Decisions Department, University of Pennsylvania</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>Stockholm School of Economics</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>The Wharton School at The University of Pennsylvania</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>The Wharton School, University of Pennsylvania</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>UC Berkeley &amp; UCSF</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>University of California, Berkeley</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>University of Chicago</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>University of Pennsylvania, (the Wharton School), Department of Statistics and Data Science</td><td class="num">1</td><td class="num">1.7%</td></tr><tr><td>University of Toronto</td><td class="num">1</td><td class="num">1.7%</td></tr></tbody></table>
+              </div>
+            </div>
+          </section>
+
+          <section class="demog-group" aria-labelledby="demog-1">
+            <h3 class="guide-subtitle" id="demog-1">Senior scientists (n = 13)</h3>
+            <div class="demog-grid">
+              <div class="demog-block">
+                <h4 class="demog-h">Gender</h4>
+                <table class="demog-table"><thead><tr><th>Gender</th><th class="num">n</th><th class="num">%</th></tr></thead><tbody><tr><td>Male</td><td class="num">8</td><td class="num">61.5%</td></tr><tr><td>Female</td><td class="num">5</td><td class="num">38.5%</td></tr></tbody></table>
+              </div>
+              <div class="demog-block">
+                <h4 class="demog-h">Country of residence</h4>
+                <table class="demog-table"><thead><tr><th>Country</th><th class="num">n</th><th class="num">%</th></tr></thead><tbody><tr><td>United States</td><td class="num">5</td><td class="num">38.5%</td></tr><tr><td>Canada</td><td class="num">2</td><td class="num">15.4%</td></tr><tr><td>Singapore</td><td class="num">2</td><td class="num">15.4%</td></tr><tr><td>United Kingdom</td><td class="num">2</td><td class="num">15.4%</td></tr><tr><td>France</td><td class="num">1</td><td class="num">7.7%</td></tr><tr><td>Israel</td><td class="num">1</td><td class="num">7.7%</td></tr></tbody></table>
+              </div>
+              <div class="demog-block">
+                <h4 class="demog-h">Discipline</h4>
+                <table class="demog-table"><thead><tr><th>Discipline</th><th class="num">n</th><th class="num">%</th></tr></thead><tbody><tr><td>Behavioral &amp; Social Sciences</td><td class="num">10</td><td class="num">76.9%</td></tr><tr><td>Management &amp; Strategy</td><td class="num">3</td><td class="num">23.1%</td></tr></tbody></table>
+              </div>
+              <div class="demog-block demog-block-wide">
+                <h4 class="demog-h">Institution</h4>
+                <table class="demog-table"><thead><tr><th>Institution</th><th class="num">n</th><th class="num">%</th></tr></thead><tbody><tr><td>Baruch Ivcher School of Psychology, Reichman University</td><td class="num">1</td><td class="num">7.7%</td></tr><tr><td>ESSEC Business School</td><td class="num">1</td><td class="num">7.7%</td></tr><tr><td>INSEAD</td><td class="num">1</td><td class="num">7.7%</td></tr><tr><td>London Business School</td><td class="num">1</td><td class="num">7.7%</td></tr><tr><td>New College of Florida</td><td class="num">1</td><td class="num">7.7%</td></tr><tr><td>Oregon State University</td><td class="num">1</td><td class="num">7.7%</td></tr><tr><td>Singapore Management University</td><td class="num">1</td><td class="num">7.7%</td></tr><tr><td>Stanford University</td><td class="num">1</td><td class="num">7.7%</td></tr><tr><td>The Wharton School, University of Pennsylvania</td><td class="num">1</td><td class="num">7.7%</td></tr><tr><td>University College London</td><td class="num">1</td><td class="num">7.7%</td></tr><tr><td>University of North Texas</td><td class="num">1</td><td class="num">7.7%</td></tr><tr><td>University of Toronto</td><td class="num">1</td><td class="num">7.7%</td></tr><tr><td>University of Waterloo</td><td class="num">1</td><td class="num">7.7%</td></tr></tbody></table>
+              </div>
+            </div>
+          </section>
+
+        </section>
+      </main>
+    </div>
+
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open navigation">
+      Menu
+    </button>
+    <script src="js/nav.v7.js"></script>
+  </body>
+</html>
